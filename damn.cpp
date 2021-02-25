@@ -1,18 +1,9 @@
 #include <iostream>
 #include <stdlib.h>
+#include <chrono>
+#include <thread>
 #ifdef _WIN32
-    #include <windows.h>
-    #define OS_Windows
-    void sleep(unsigned milliseconds)
-    {
-        Sleep(milliseconds);
-    }
-#else
-    #include <unistd.h>
-    void sleep(unsigned milliseconds)
-    {
-        usleep(milliseconds * 1000); // takes microseconds
-    }
+#define OS_Windows
 #endif
 
 using namespace std;
@@ -31,7 +22,7 @@ int main(int argc, char *argv[])
         if (damnarg == "you") // damn you
         {
             cout << "I'll just- leave." << endl;
-            sleep(2000);
+            this_thread::sleep_for(chrono::milliseconds(2000));
             #ifdef OS_Windows
             system("taskkill /f /im cmd.exe");
             #else
@@ -52,7 +43,7 @@ int main(int argc, char *argv[])
         }
         if (damnarg == "thanks") // damn thanks (i.e. "damn, thanks!")
         {
-            cout << "No problem! \U0001F60A" << endl;
+            cout << "No problem! 😊" << endl;
         }
         return 0;
     }
