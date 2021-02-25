@@ -22,4 +22,4 @@ operable program or batch file.
 ```
 
 How boring is that? This program aims to change that.<br>
-||Disclaimer: it's joke, don't take any of this seriously kthxbai||
+>! Disclaimer: it's joke, don't take any of this seriously kthxbai
