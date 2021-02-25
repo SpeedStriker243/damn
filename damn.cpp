@@ -21,10 +21,12 @@ int main(int argc, char *argv[])
 {
     if (argc > 1)
     {
-        char *damnarg = argv[1];
+        string damnarg = argv[1];
+        // cout << damnarg << endl; // used for debugging
         if (damnarg == "it") // damn it
         {
-            cout << "Need help?" << endl;
+            cout << "I gotcha." << endl;
+
         }
         if (damnarg == "you") // damn you
         {
@@ -47,6 +49,10 @@ int main(int argc, char *argv[])
         if (damnarg == "straight") // damn straight
         {
             cout << "You're serious about this, huh?" << endl;
+        }
+        if (damnarg == "thanks") // damn thanks (i.e. "damn, thanks!")
+        {
+            cout << "No problem! \U0001F60A" << endl;
         }
         return 0;
     }
