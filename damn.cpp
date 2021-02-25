@@ -45,6 +45,14 @@ int main(int argc, char *argv[])
         {
             cout << "No problem! 😊" << endl;
         }
+        if (damnarg == "what") // damn what
+        {
+            cout << "Usage: damn it | you | computer | right | straight | thanks | what" << endl;
+        }
+        else
+        {
+            cout << "I can't understand that. Type \"damn what\" for help." << endl;
+        }
         return 0;
     }
     else if (argc > 2)
