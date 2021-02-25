@@ -51,7 +51,11 @@ int main(int argc, char *argv[])
         }
         if (damnarg == "fourth") // damn fourth (i.e. "damn fourth chaos emerald")
         {
-            system("https://www.youtube.com/watch?v=xrXKFWj8gdw");
+            #ifdef OS_Windows
+            system("start https://www.youtube.com/watch?v=xrXKFWj8gdw");
+            #else
+            system("open https://www.youtube.com/watch?v=xrXKFWj8gdw");
+            #endif
         }
         else
         {
