@@ -47,7 +47,11 @@ int main(int argc, char *argv[])
         }
         if (damnarg == "what") // damn what
         {
-            cout << "Usage: damn it | you | computer | right | straight | thanks | what" << endl;
+            cout << "Usage: damn it | you | computer | right | straight | thanks | what | fourth" << endl;
+        }
+        if (damnarg == "fourth") // damn fourth (i.e. "damn fourth chaos emerald")
+        {
+            system("https://www.youtube.com/watch?v=xrXKFWj8gdw");
         }
         else
         {
