@@ -5,6 +5,12 @@
 #ifdef _WIN32
 #define OS_Windows
 #endif
+#ifdef __APPLE__
+#define OS_X
+#endif
+#ifdef linux
+#define OS_Linux
+#endif
 
 using namespace std;
 
@@ -53,8 +59,12 @@ int main(int argc, char *argv[])
         {
             #ifdef OS_Windows
             system("start https://www.youtube.com/watch?v=xrXKFWj8gdw");
-            #else
+            #endif
+            #ifdef OS_Apple
             system("open https://www.youtube.com/watch?v=xrXKFWj8gdw");
+            #endif
+            #ifdef OS_Linux
+            system("xdg-open https://www.youtube.com/watch?v=xrXKFWj8gdw");
             #endif
         }
         else
