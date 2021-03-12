@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
             #ifdef OS_Windows
             system("start https://www.youtube.com/watch?v=xrXKFWj8gdw");
             #endif
-            #ifdef OS_Apple
+            #ifdef OS_X
             system("open https://www.youtube.com/watch?v=xrXKFWj8gdw");
             #endif
             #ifdef OS_Linux
